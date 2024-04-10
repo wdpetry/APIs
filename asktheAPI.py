@@ -1,7 +1,7 @@
 import requests
 
 
-url = "https://api.openweathermap.org/data/2.5/weather?lat=39.6753592&lon=-104.783926&appid=88b2b960069a116def666a02c973d216"
+url = "https://api.openweathermap.org/data/2.5/weather?lat=39.6753592&lon=-104.783926&appid={apikey}"
 response = requests.get(url)
 if response.status_code == 200:
     d = response.json()
